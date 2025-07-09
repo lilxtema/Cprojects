@@ -86,7 +86,8 @@ int count_cell(int matrix[HEIGHT][WIDTH], int i, int j) {
         for (int j_coordinate = -1; j_coordinate <= 1; j_coordinate++) {
             // исключаем из подсчета клетку, соседей которой считаем
             if (!(i_coordinate == 0 && j_coordinate == 0)) {
-                int i_neighbour_coordinate = (i + i_coordinate + HEIGHT) % HEIGHT;  // реализую зацикливание
+                int i_neighbour_coordinate =
+                    (i + i_coordinate + HEIGHT) % HEIGHT;  // реализую зацикливание
                 int j_neighbour_coordinate = (j + j_coordinate + WIDTH) % WIDTH;
 
                 if (matrix[i_neighbour_coordinate][j_neighbour_coordinate]) count++;
