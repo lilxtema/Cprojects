@@ -26,8 +26,16 @@ test_sorting: $(TEST_TARGET)
 test_search: $(TEST_TARGET)
 	./$(TEST_TARGET) search
 
+# Запуск только теста сортировки стран по кол-ву товаров
+test_country_products_sort: $(TEST_TARGET)
+	./$(TEST_TARGET) country
+
+test_country_unique_products_sort: $(TEST_TARGET)
+	./$(TEST_TARGET) unique_country
+
 run: $(TARGET)
 	./$(TARGET)
+rebuild: clean all
 
 clean:
 	rm -f $(TARGET) $(TEST_TARGET)

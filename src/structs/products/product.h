@@ -15,9 +15,17 @@ typedef struct
 
 } Product;
 
+typedef struct 
+{
+    char country_name[MAX_COUNTRY_LENGTH]; 
+    int count_products_from_country; //счетчик кол-ва товаров из страны
+} Count_Unique_Country;
+
 // основной функционал
 void bubble_sort(Product* products, int len);
 void output_arr(Product* products, int len);
 void find_products_by_company(Product* products, int len);
+void country_count_products(Product* products, int len);
+void country_count_unique_products(Product* products, int len);
 
 #endif
