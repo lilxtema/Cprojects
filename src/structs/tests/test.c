@@ -25,6 +25,7 @@ void run_tests(Product *products, int len) {
     test_sorting(products, len);
     test_search(products, len);
 }
+
 void test_sort_from_country(Product *products, int len) {
     printf("\n\nТЕСТЫ СОРТИРОВКИ СТРАН ПО КОЛ-ВУ ТОВАРОВ\n\n");
     country_count_products(products, len);
