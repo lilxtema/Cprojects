@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include "products/product.h"
 #include "tests/test.h"
 

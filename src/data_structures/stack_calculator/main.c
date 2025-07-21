@@ -8,7 +8,6 @@ int main() {
     stack *value = NULL;
     stack *history_operation_on_values = NULL;
     char command[5];
-    int num;
 
     int current = 0;
     push(&value, current);
