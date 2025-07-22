@@ -9,8 +9,8 @@ typedef struct Node {
 } Node;
 
 typedef struct Queue {
-    struct Node *first_client;  // указатель первый элемент в очереди (выход из очереди)
-    struct Node *last_client;   // указатель на последний элемент в очереди (вход в очередь)
+    struct Node *first_elem;  // указатель первый элемент в очереди (выход из очереди)
+    struct Node *last_elem;   // указатель на последний элемент в очереди (вход в очередь)
 } Queue;
 
 void init_queue(Queue *q);
@@ -19,5 +19,6 @@ int dequeue(Queue *q);
 int show_first_elem(Queue *q);
 int list_is_empty(Queue *q);
 void print_queue(Queue *q);
+void destroy_queue(Queue *q);
 
 #endif

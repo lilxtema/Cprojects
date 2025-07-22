@@ -44,3 +44,11 @@ int peek(stack *top) {
 }
 
 int is_empty(stack *top) { return top == NULL; }
+
+void destroy_stack(stack **top) {
+    while (*top != NULL) {
+        stack *temp = *top;
+        *top = (*top)->next;
+        pop(&temp);
+    }
+}

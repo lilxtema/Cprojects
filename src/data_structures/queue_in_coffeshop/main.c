@@ -12,5 +12,6 @@ int main() {
     init_queue(&customers_queue);
     generate_queue(&customers_queue);
 
+    destroy_queue(&customers_queue);
     return 0;
 }

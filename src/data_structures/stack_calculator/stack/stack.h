@@ -1,3 +1,5 @@
+#ifndef STACK_H
+#define STACK_H
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,3 +13,6 @@ int pop(stack **top);
 void show_elements(stack *top);
 int peek(stack *top);
 int is_empty(stack *top);
+void destroy_stack(stack **top);
+
+#endif

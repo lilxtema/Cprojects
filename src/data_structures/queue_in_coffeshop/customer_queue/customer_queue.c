@@ -91,6 +91,17 @@ int get_queue_len(Queue *q) {
     return count;
 }
 
+void destroy_queue(Queue *q) {
+    while (q->first_client != NULL) {
+        Node *temp = q->first_client;
+        q->first_client = q->first_client->next;
+
+        free(temp);
+    }
+
+    q->first_client = NULL;
+}
+
 void generate_queue(Queue *q) {
     const char *first_names[] = {
         "Juan Too Many Tacos",   "Carlos Spicy Sombrero",   "Pablo Loco Nacho",

@@ -28,5 +28,6 @@ int list_is_empty(Queue *q);
 void print_queue(Queue *q);
 int get_queue_len(Queue *q);
 void generate_queue(Queue *q);
+void destroy_queue(Queue *q);
 
 #endif

@@ -53,5 +53,7 @@ int main() {
         }
     }
 
+    destroy_stack(&value);
+    destroy_stack(&history_operation_on_values);
     return 0;
 }

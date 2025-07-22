@@ -18,5 +18,6 @@ int main() {
 
     print_queue(&q);  // Очередь: 20 30
 
+    destroy_queue(&q);
     return 0;
 }
