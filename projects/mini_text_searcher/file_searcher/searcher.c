@@ -52,7 +52,7 @@ void read_words(FILE *file, WordEntry *arr, int *len) {
                 pos = 0;
             }
         } else {
-            if (pos < sizeof(word) - 1) {
+            if (pos < 100 - 1) {
                 word[pos++] = c;
             }
         }
